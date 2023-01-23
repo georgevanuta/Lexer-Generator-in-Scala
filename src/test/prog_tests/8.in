@@ -1,0 +1,15 @@
+begin
+a = 50
+b = 5
+c = 0
+if (b - a > 0) then
+    c = 1
+else
+    begin
+    while (b - a > 0) do
+        b = b + 5
+    od
+    c = -1
+    end
+fi
+end

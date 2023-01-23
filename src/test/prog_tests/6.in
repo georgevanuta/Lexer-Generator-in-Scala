@@ -1,0 +1,10 @@
+begin
+r = 1
+a = 5
+while (a > 0) do
+    begin
+    r = r * a
+    a = a - 1
+    end
+od
+end

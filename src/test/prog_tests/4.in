@@ -1,0 +1,9 @@
+begin
+a = 2
+b = 3
+if (a + b > 3) then
+    r = a - b
+else
+    r = b
+fi
+end

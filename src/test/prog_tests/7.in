@@ -1,0 +1,15 @@
+begin
+a = 10
+b = 3
+while (a > 0) do
+    begin
+    b = b * a
+    a = a - 3
+    if (b > 50) then
+        a = 0
+    else
+	a = a + 1
+    fi
+    end
+od
+end

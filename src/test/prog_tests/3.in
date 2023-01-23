@@ -1,0 +1,9 @@
+begin
+a = 1
+r = 0
+if (a == 2) then
+    r = a + 3
+else
+    r = a
+fi
+end
