@@ -1,15 +1,11 @@
-# LFA - Project 2022
-
-`Name: Vănuță George-Andrei`
-
-`Group: 334CB`
+# Lexer Generator
 
 `Language: Scala`
 
 **`Tests passed:`**
 
-- `1st stage: all`
-- `2nd stage: all`
+- `1st stage: all` \
+- `2nd stage: all` \
 - `3rd stage: all`
 
 ## Table of Contents
