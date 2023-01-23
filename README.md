@@ -10,7 +10,7 @@
 
 ## Table of Contents
 
-- [LFA - Project 2022](#lfa---project-2022)
+- [LFA - Project 2022](#lexer-generator)
 	- [Table of Contents](#table-of-contents)
 	- [Stage 1 - Prenex to NFA to DFA](#stage-1---prenex-to-nfa-to-dfa)
 		- [NFA](#nfa)
