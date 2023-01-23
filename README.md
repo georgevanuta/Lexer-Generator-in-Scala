@@ -4,8 +4,8 @@
 
 **`Tests passed:`**
 
-- `1st stage: all` \
-- `2nd stage: all` \
+- `1st stage: all`
+- `2nd stage: all`
 - `3rd stage: all`
 
 ## Table of Contents
