@@ -39,29 +39,40 @@
 
 My implementation of the generic class `Nfa[A]` has **5** class members:
 
-- $Q: $ `states: Set[A]` which holds the states of the automata. I chose the type
+- $Q: $
+`states: Set[A]` which holds the states of the automata. I chose the type
 to be of `Set` because it makes no sense to have duplicate states to do
 different things.
-- $\Sigma: $ `alphabet: Set[Char]` which holds the alphabet of the *NFA*. Same reason as
+- $\Sigma: $ 
+`alphabet: Set[Char]` which holds the alphabet of the *NFA*. Same reason as
 above to why I chose this to be a `Set`.
-- $\Delta: $ `transitionFn: HashMap[(A, Either[Char, SpecialAtoms]), Set[A]]`, which is
+- $\Delta: $
+`transitionFn: HashMap[(A, Either[Char, SpecialAtoms]), Set[A]]`, which is
 is a `HashMap` with keys of type state (`A`) and character read, which is either a simple
 character (`Left[Char]`) or special expression `Right[SpecialAtoms]`. I choose this instead
 of `String` because I wanted to make clear the existence of the special atoms.
-- $q_0: $ `startState: A`.
-- $F: $ `finalStates: Set[A]`.
+- $q_0: $
+`startState: A`.
+- $F: $ 
+`finalStates: Set[A]`.
 
 ### DFA
 
 My implementation of the generic class `Dfa[A]` has **6** class members:
 
-- $Q: $ `states: Set[A]`, same explanation as at *NFA*.
-- $\delta: $ `transitionFn: HashMap[(A, Char), A]`, which takes a pair of current state and
+- $Q: $
+`states: Set[A]`, same explanation as at *NFA*.
+- $\delta: $
+`transitionFn: HashMap[(A, Char), A]`, which takes a pair of current state and
 character read, and returns the next state if present in the transition function, or `sink`.
-- $\Sigma: $ `alphabet: Set[Char]`.
-- $q_0: $ `startState: A`.
-- $F: $ `finalStates: Set[A]`.
-- $SINK: $ `sink: A`, which represents the sink state. This was added because of the
+- $\Sigma: $
+`alphabet: Set[Char]`.
+- $q_0: $
+`startState: A`.
+- $F: $
+`finalStates: Set[A]`.
+- $SINK: $
+`sink: A`, which represents the sink state. This was added because of the
 given signature of the `next` function, making it impossible to not return a state
 when not found in the transition function. This `sink` state is hardcoded to **not**
 overlap with **ANY** other states.
