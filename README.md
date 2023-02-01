@@ -89,7 +89,7 @@ val listOfOperations: List[String] = {
     .findAllIn(str)
     .toList
     .map(x => "^\'|\'$".r.replaceAllIn(x, ""))
-.reverse
+    .reverse
 }
 ```
 
