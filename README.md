@@ -134,7 +134,7 @@ dfa.map(
 )
 ```
 
-This function basically transforms a set to its index in the *DFA's* set of states ($Q$).
+This function basically transforms a set to its index in the *DFA's* set of states ( $Q$ ).
 
 #### Actual algorithm
 
